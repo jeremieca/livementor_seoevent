@@ -13,4 +13,5 @@ And in a new terminal, launch :
      cd ../app  
      npm install  
      bower install  
+     grunt watch
 
