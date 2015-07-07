@@ -1,12 +1,14 @@
 {
-  "name": "ng-boilerplate",
-  "version": "0.3.2",
-  "devDependencies": {
-    "angular": "~1.2",
-    "angular-mocks": "~1.2",
-    "bootstrap": "~3.1",
-    "angular-bootstrap": "~0.10.0",
-    "angular-ui-router": "~0.2"
-  },
-  "dependencies": {}
+	"name": "Seo Event - Livementor",
+	"version": "0.0.1",
+	"devDependencies": {
+		"bootstrap": "~3.1",
+		"angular-bootstrap": "~0.10.0"
+	},
+	"dependencies": {},
+	"cdn": [
+		"https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.6/angular.min.js",
+		"http://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.6/angular-route.js",
+		"https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.0/ui-bootstrap-tpls.min.js"
+	]
 }

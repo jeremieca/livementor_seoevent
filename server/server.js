@@ -3,13 +3,14 @@ var
 	app = express(),
 	errorHandler = require('express-error-handler'),
 	errorHandlerFunction = errorHandler.httpError(404),
+	staticFolder = (process.argv[2] === 'prod') ? '../app/build/prod' : '../app/build/dev',
 	handler = errorHandler({
 		static: {
-			'404': '../app/build/index.html'
+			'404': staticFolder + '/index.html'
 		}
 	});
 
-app.use(express.static('../app/build/'));
+app.use(express.static(staticFolder));
 app.use(handle404);
 app.use(handler);
 
